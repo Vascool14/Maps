@@ -1,0 +1,43 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+#menu{
+  min-width: 250px;
+  width: 42vh;
+  max-width: 300px;
+  border-radius: 0 14px 14px 0;
+  margin: 0.4rem;
+}
+#menu > a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 2rem 1rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+@media (max-width: 576px) {
+  #menu > a {
+      font-size: 1rem;
+      text-align: center;
+  }
+}
+#menu > a:hover {
+  color: #343078;
+}
+.burger{
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
